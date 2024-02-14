@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('unauth', function () {
+    return view('unauth');
+});
 Route::get('/', function () {
     return view('welcome');
 });
