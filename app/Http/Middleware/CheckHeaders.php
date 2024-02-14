@@ -16,6 +16,7 @@ class CheckHeaders
     public function handle(Request $request, Closure $next): Response
     {
         // logic implementation is pending
+        Log::debug("");
         return $next($request);
     }
 }
