@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user/{id}', [UserController::class, 'getUsers']);
+Route::get('/user/{id}', [UserController::class, 'getUsers'])->middleware('checkHeaders');
